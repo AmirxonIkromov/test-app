@@ -1,0 +1,39 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/test_app
+    username: postgres
+    password: root123
+    drive-class-name: org.postgresql.Driver
+  main:
+    allow-circular-references: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: xanna2320@gmail.com
+#    password: 23200880
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#            starttls:
+#              enable: true
+
+
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
