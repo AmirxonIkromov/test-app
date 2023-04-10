@@ -5,15 +5,15 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://containers-us-west-136.railway.app:7556/railway
+    url: jdbc:postgresql://containers-us-west-65.railway.app:6205/railway
     username: postgres
-    password: RnwODduSiWsnxjrxnPtJ
+    password: 1YqjlUaWiHFjMz7KmIKu
     drive-class-name: org.postgresql.Driver
   main:
     allow-circular-references: true
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
