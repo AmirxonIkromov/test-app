@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:postgresql://containers-us-west-136.railway.app:7556/railway
     username: postgres
-    password: RnwODduSiWsnxjrxnPtJ
+    password: rbp1HqhSmAQbT4LlbAkK
     drive-class-name: org.postgresql.Driver
   main:
     allow-circular-references: true
