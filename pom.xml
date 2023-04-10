@@ -11,7 +11,7 @@
     <groupId>com.amirscode</groupId>
     <artifactId>test-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+<!--    <packaging>war</packaging>-->
     <name>test-app</name>
     <description>test-app</description>
     <properties>
