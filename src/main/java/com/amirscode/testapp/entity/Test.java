@@ -31,6 +31,9 @@ public class Test {
 
     private String question;
     private String rightAnswer;
+    private String option1;
+    private String option2;
+    private String option3;
 
     @Enumerated(EnumType.STRING)
     private Level level;

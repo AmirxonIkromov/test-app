@@ -98,7 +98,7 @@ public class AuthService {
             message.setSentDate(new Date(System.currentTimeMillis()));
             message.setTo(sendingEmail);
             message.setSubject("Email verification code");
-            message.setText("<a href='http://localhost:8080/auth/verifyEmail?emailCode=" + emailCode + "&email=" + sendingEmail + "'> Verify email</a>");
+            message.setText("<a href='https://test-app.up.railway.app/auth/verifyEmail?emailCode=" + emailCode + "&email=" + sendingEmail + "'> Verify email</a>");
             javaMailSender.send(message);
         } catch (Exception ex) {
             ex.getStackTrace();
