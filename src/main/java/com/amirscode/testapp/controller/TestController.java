@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/test")
@@ -18,5 +20,11 @@ public class TestController {
     @GetMapping
     public ResponseEntity<?> getTestsByLevel(@RequestBody @NonNull TestRequest testRequest) {
         return testService.getTestsByLevel(testRequest);
+    }
+
+//    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping
+    public ResponseEntity<?> addTest(@RequestBody TestRequest testRequest) {
+        return testService.addTest(testRequest);
     }
 }

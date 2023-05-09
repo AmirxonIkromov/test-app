@@ -5,10 +5,16 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://containers-us-west-65.railway.app:6205/railway
+    url: jdbc:postgresql://containers-us-west-173.railway.app:7353/railway
     username: postgres
-    password: 1YqjlUaWiHFjMz7KmIKu
+    password: QuD8Oh894DIAU86flFYt
     drive-class-name: org.postgresql.Driver
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5433/test_app
+#    username: postgres
+#    password: root123
+#    drive-class-name: org.postgresql.Driver
   main:
     allow-circular-references: true
   jpa:

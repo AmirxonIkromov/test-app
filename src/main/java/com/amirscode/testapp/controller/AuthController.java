@@ -32,7 +32,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<?> login(@NonNull @RequestBody LoginRequest request) {
+    public ResponseEntity<?> login(@Validated @RequestBody LoginRequest request) {
         return authService.login(request);
     }
 

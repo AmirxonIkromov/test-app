@@ -15,7 +15,7 @@ public class SubjectController {
 
     private final SubjectService subjectService;
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public ResponseEntity<?> add(@RequestBody @NonNull SubjectDTO subjectDTO) {
         return subjectService.add(subjectDTO);
