@@ -9,8 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.constraints.Email;
-
 
 @RestController
 @Validated
@@ -21,13 +19,8 @@ public class AuthController {
     private final AuthService authService;
 
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello from tomcat";
-    }
-
     @PostMapping("/register")
-    public ResponseEntity<?> register(@NonNull @Email @RequestBody RegisterRequest request){
+    public ResponseEntity<?> register(@NonNull @RequestBody RegisterRequest request){
         return authService.register(request);
     }
 
